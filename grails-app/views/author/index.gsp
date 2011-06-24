@@ -48,6 +48,30 @@
 				<g:textField name="books[1].title" value="${authorInstance?.books ? authorInstance.books[1].title : ''}" />
 			  </td>
             </tr>
+            <tr class="prop">
+              <td valign="top" class="name">
+                <label for="publications['p1'].name"><g:message code="book.title.label" default="Publication 1" /></label>
+              </td>
+              <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'publications[\'p1\'].name', 'errors')}">
+                <g:textField name="publications['p1'].name" value="${authorInstance?.publications ? authorInstance.publications['p1'].name : ''}" />
+              </td>
+            </tr>
+            <tr class="prop">
+              <td valign="top" class="name">
+                <label for="tags[0].name"><g:message code="book.title.label" default="Tag 1" /></label>
+              </td>
+              <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'tags[0].name', 'errors')}">
+                <g:textField name="tags[0].name" value="${authorInstance?.publications ? authorInstance.tags[0].name : ''}" />
+              </td>
+            </tr>
+            <tr class="prop">
+              <td valign="top" class="name">
+                <label for="tags[1].name"><g:message code="book.title.label" default="Tag 2" /></label>
+              </td>
+              <td valign="top" class="value ${hasErrors(bean: authorInstance, field: 'tags[1].name', 'errors')}">
+                <g:textField name="tags[1].name" value="${authorInstance?.publications ? authorInstance.tags[1].name : ''}" />
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
